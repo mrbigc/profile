@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อฉัน</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .pixel {
+            font-family: 'VT323', monospace;
+        }
+
+        .ios-blur {
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(2px) saturate(180%);
+            -webkit-backdrop-filter: blur(32px) saturate(180%);
+            box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-cover bg-center md:bg-[url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589607108182036/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r800x450.png?ex=68652bab&is=6863da2b&hm=e86edf1e284ccb0dbf176bdeb9d872013506a8b4fb32aec478c47a70ab669187&')] md:bg-cover md:bg-center"
+    style="background-image: url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589968812245063/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r1080x1920.png?ex=68652c01&is=6863da81&hm=d8f39c4da7717bd8f7f569160fa51a122fdbcf2a0c1caf33eb51f9ff4dab93fe&');">
+<nav class="ios-blur px-6 py-4 shadow-md rounded-b-2xl border-b border-white/30">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-bold">MythicTable Team</a>
+        <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+            <li><a href="about.html" class="hover:text-blue-700">เกี่ยวกับ</a></li>
+            <li><a href="projects.html" class="hover:text-blue-700">โปรเจกต์</a></li>
+            <li><a href="contact.html" class="hover:text-blue-700">ติดต่อ</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 text-sm font-semibold">
+        <li><a href="about.html" class="block px-4 py-2 hover:text-blue-700">เกี่ยวกับ</a></li>
+        <li><a href="projects.html" class="block px-4 py-2 hover:text-blue-700">โปรเจกต์</a></li>
+        <li><a href="contact.html" class="block px-4 py-2 hover:text-blue-700">ติดต่อ</a></li>
+    </ul>
+</nav>
+    <section class="ios-blur py-12 px-6 text-center rounded-3xl shadow-2xl max-w-md mx-auto border border-white/30 mt-12">
+        <h2 class="text-3xl font-semibold mb-6 text-[#222] dark:text-white tracking-tight" style="font-family: 'Kanit', sans-serif;">ติดต่อฉัน</h2>
+        <div class="space-y-5">
+            <div class="flex items-center justify-center gap-3">
+                <span class="inline-flex w-10 h-10 bg-gradient-to-br from-[#7289da] to-[#5865f2] rounded-2xl items-center justify-center shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path fill="blue" d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.07.07 0 00-.073.035c-.211.375-.444.864-.608 1.249-1.844-.276-3.68-.276-5.486 0-.164-.393-.405-.874-.617-1.249a.07.07 0 00-.073-.035 19.736 19.736 0 00-4.885 1.515.064.064 0 00-.032.027C.533 9.045-.32 13.579.099 18.057a.07.07 0 00.028.048c2.052 1.507 4.041 2.422 5.992 3.029a.07.07 0 00.078-.027c.461-.63.873-1.295 1.226-1.994a.07.07 0 00-.038-.098c-.652-.247-1.27-.549-1.872-.892a.07.07 0 01-.007-.117c.125-.094.25-.192.371-.291a.07.07 0 01.073-.01c3.927 1.793 8.18 1.793 12.061 0a.07.07 0 01.074.009c.122.099.246.197.371.291a.07.07 0 01-.006.117 12.298 12.298 0 01-1.873.893.07.07 0 00-.038.097c.36.699.772 1.364 1.226 1.994a.07.07 0 00.078.028c1.961-.607 3.95-1.522 6.002-3.029a.07.07 0 00.028-.048c.5-5.177-.838-9.673-3.548-13.661a.061.061 0 00-.031-.027zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.974 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.175 1.094 2.156 2.418 0 1.334-.946 2.419-2.156 2.419z"/>
+                    </svg>
+                </span>
+                <span class="text-[#222] dark:text-white text-lg font-medium" style="font-family: 'Kanit', sans-serif;">Discord: bigc8888</span>
+            </div>
+            <div class="flex items-center justify-center gap-3"></div>
+                <span class="inline-flex w-10 h-10 bg-gradient-to-br from-[#1877f3] to-[#4267b2] rounded-2xl items-center justify-center shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill="#1877f3" d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.406.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0"/>
+                    </svg>
+                </span>
+                <span class="text-[#222] dark:text-white text-lg font-medium" style="font-family: 'Kanit', sans-serif;">
+                    Facebook: <a href="https://www.facebook.com/m.bigc.2024/" class="text-blue-700 hover:underline" target="_blank" rel="noopener">Mɾ Bigc</a>
+                </span>
+            </div>
+        </div>
+    </section></span></svg></span>
+    <footer
+    class="ios-blur text-center py-4 rounded-t-2xl border-t border-white/30 text-sm text-gray-700 mt-12 fixed bottom-0 left-0 w-full z-50">
+    © 2025 Bigc
+</footer>
+<script>
+    document.getElementById("menu-btn").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    function setBg() {
+        const body = document.body;
+        if (window.innerWidth < 768) {
+            body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589968812245063/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r1080x1920.png?ex=68652c01&is=6863da81&hm=d8f39c4da7717bd8f7f569160fa51a122fdbcf2a0c1caf33eb51f9ff4dab93fe&')";
+        } else {
+            body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589607108182036/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r800x450.png?ex=68652bab&is=6863da2b&hm=e86edf1e284ccb0dbf176bdeb9d872013506a8b4fb32aec478c47a70ab669187&')";
+        }
+    }
+    setBg();
+    window.addEventListener('resize', setBg);
+</script>
+</body>
+</html></svg></div></section></body>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MythicTable Team</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Kanit', sans-serif;
+    }
+    .pixel {
+      font-family: 'VT323', monospace;
+    }
+    .ios-blur {
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(2px) saturate(180%);
+      -webkit-backdrop-filter: blur(32px) saturate(180%);
+      box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+  </style>
+</head>
+<body class="bg-cover bg-center md:bg-[url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589607108182036/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r800x450.png?ex=68652bab&is=6863da2b&hm=e86edf1e284ccb0dbf176bdeb9d872013506a8b4fb32aec478c47a70ab669187&')] md:bg-cover md:bg-center" style="background-image: url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589968812245063/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r1080x1920.png?ex=68652c01&is=6863da81&hm=d8f39c4da7717bd8f7f569160fa51a122fdbcf2a0c1caf33eb51f9ff4dab93fe&');"></body>
+
+  <nav class="ios-blur px-6 py-4 shadow-md rounded-b-2xl border-b border-white/30">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold">MythicTable Team</a>
+      <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+        <li><a href="about.html" class="hover:text-blue-700">เกี่ยวกับ</a></li>
+        <li><a href="projects.html" class="hover:text-blue-700">โปรเจกต์</a></li>
+        <li><a href="contact.html" class="hover:text-blue-700">ติดต่อ</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 text-sm font-semibold">
+      <li><a href="about.html" class="block px-4 py-2 hover:text-blue-700">เกี่ยวกับ</a></li>
+      <li><a href="projects.html" class="block px-4 py-2 hover:text-blue-700">โปรเจกต์</a></li>
+      <li><a href="contact.html" class="block px-4 py-2 hover:text-blue-700">ติดต่อ</a></li>
+    </ul>
+  </nav>
+
+  <section class="text-center py-12 px-6">
+    <div class="mx-auto w-36 h-36 md:w-44 md:h-44 mb-4 rounded-3xl shadow-2xl border-4 border-white/40 ios-blur flex items-center justify-center">
+      <img src="https://cdn.discordapp.com/attachments/1339098243509911665/1389579427138113647/creator.png?ex=68652230&is=6863d0b0&hm=3880a6cc3b3d909a4871b54bcffb3119620f4b0f2546c93687738a95554dbd6e&" alt="Minecraft Character" class="w-32 h-32 md:w-40 md:h-40 rounded-2xl" />
+    </div>
+    <h1 class="text-3xl md:text-5xl font-bold ios-blur inline-block px-4 md:px-6 py-2 rounded-xl shadow-md" style="font-family: 'Kanit', sans-serif;">Addon Development</h1>
+    <p class="mt-4 text-gray-800 max-w-xl mx-auto ios-blur px-4 py-2 rounded-xl shadow">
+      ก้าวสู่โลกแห่งการสร้างสรรค์! ทีมของเราพร้อมพัฒนา Addon สุดล้ำ ที่จะเปลี่ยนประสบการณ์ Minecraft ของคุณให้เหนือจินตนาการ สนุกไปกับไอเดียใหม่ ๆ และนวัตกรรมที่ไม่หยุดนิ่ง!
+    </p>
+  </section>
+
+  <footer class="ios-blur text-center py-4 rounded-t-2xl border-t border-white/30 text-sm text-gray-700 mt-12 fixed bottom-0 left-0 w-full z-50">
+    © 2025 Bigc
+  </footer>
+  <script>
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    function setBg() {
+      const body = document.body;
+      if (window.innerWidth < 768) {
+        body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589968812245063/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r1080x1920.png?ex=68652c01&is=6863da81&hm=d8f39c4da7717bd8f7f569160fa51a122fdbcf2a0c1caf33eb51f9ff4dab93fe&')";
+      } else {
+        body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589607108182036/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r800x450.png?ex=68652bab&is=6863da2b&hm=e86edf1e284ccb0dbf176bdeb9d872013506a8b4fb32aec478c47a70ab669187&')";
+      }
+    }
+    setBg();
+    window.addEventListener('resize', setBg);
+  </script>
+</body>
+</html>

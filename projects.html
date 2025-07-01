@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ผลงานแอดออน</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .pixel {
+            font-family: 'VT323', monospace;
+        }
+
+        .ios-blur {
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(2px) saturate(180%);
+            -webkit-backdrop-filter: blur(32px) saturate(180%);
+            box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-cover bg-center md:bg-[url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589607108182036/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r800x450.png?ex=68652bab&is=6863da2b&hm=e86edf1e284ccb0dbf176bdeb9d872013506a8b4fb32aec478c47a70ab669187&')] md:bg-cover md:bg-center"
+    style="background-image: url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589968812245063/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r1080x1920.png?ex=68652c01&is=6863da81&hm=d8f39c4da7717bd8f7f569160fa51a122fdbcf2a0c1caf33eb51f9ff4dab93fe&');">
+</body>
+
+<nav class="ios-blur px-6 py-4 shadow-md rounded-b-2xl border-b border-white/30">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-bold">MythicTable Team</a>
+        <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+            <li><a href="about.html" class="hover:text-blue-700">เกี่ยวกับ</a></li>
+            <li><a href="projects.html" class="hover:text-blue-700">โปรเจกต์</a></li>
+            <li><a href="contact.html" class="hover:text-blue-700">ติดต่อ</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 text-sm font-semibold">
+        <li><a href="about.html" class="block px-4 py-2 hover:text-blue-700">เกี่ยวกับ</a></li>
+        <li><a href="projects.html" class="block px-4 py-2 hover:text-blue-700">โปรเจกต์</a></li>
+        <li><a href="contact.html" class="block px-4 py-2 hover:text-blue-700">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<section class="py-12 px-6">
+    <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-8 text-gray-900 drop-shadow">แอดออนที่วางขาย</h2>
+        <div class="flex flex-col gap-6">
+            <a
+                class="ios-blur bg-white/80 p-4 rounded-2xl shadow-lg hover:scale-105 transition flex items-center space-x-4">
+                <img src="https://cdn.discordapp.com/attachments/1388475384517099540/1388475384751849614/image.png?ex=68651278&is=6863c0f8&hm=ed4646c9dc57b24addea01c795a872921abee8be4ade994e22afcf6a7b0712b2&"
+                    alt="School Addon" class="rounded w-24 h-24 object-cover flex-shrink-0 cursor-pointer"
+                    onclick="openModal(this.src)">
+                <div>
+                    <h3 class="text-gray-900 font-semibold drop-shadow">TR-Register</h3>
+                    <p class="text-sm text-gray-800 drop-shadow">ระบบสร้างตัวละครสุดล้ำ</p>
+                    <div class="mt-2 text-lg font-bold text-green-600 drop-shadow">฿100</div>
+                </div>
+            </a>
+            <a
+                class="ios-blur bg-white/80 p-4 rounded-2xl shadow-lg hover:scale-105 transition flex items-center space-x-4">
+                <img src="https://media.discordapp.net/attachments/1387467644235681802/1387467646911647926/Untitled17_20250625232033.png?ex=6864b3b0&is=68636230&hm=93a7fbbdcad3ccfa78e50bb22dd6eb1586f1caf07b51572cf3709c1cbb191ca6&=&format=webp&quality=lossless&width=856&height=856"
+                    alt="Status Bars UI" class="rounded w-24 h-24 object-cover flex-shrink-0 cursor-pointer"
+                    onclick="openModal(this.src)">
+                <div>
+                    <h3 class="text-gray-800 font-semibold">Advanced Status Bars UI</h3>
+                    <p class="text-sm text-gray-700">ระบบสร้างตัวละครสุดล้ำ</p>
+                    <div class="mt-2 text-lg font-bold text-green-500">฿150</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="img-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 backdrop-blur-sm">
+        <div class="absolute inset-0" onclick="closeModal()"></div>
+        <div class="relative flex flex-col items-center max-w-full max-h-full p-4">
+            <button onclick="closeModal()"
+                class="absolute top-2 right-2 bg-white/80 rounded-full p-2 shadow hover:bg-white transition z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img id="modal-img" src="" alt="Full Image"
+                class="rounded-lg max-h-[80vh] max-w-[90vw] object-contain shadow-lg">
+        </div>
+    </div>
+    <script>
+        function openModal(src) {
+            document.getElementById('modal-img').src = src;
+            document.getElementById('img-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('img-modal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function (e) {
+            if (e.key === "Escape") closeModal();
+        });
+    </script>
+</section>
+<footer
+    class="ios-blur text-center py-4 rounded-t-2xl border-t border-white/30 text-sm text-gray-700 mt-12 fixed bottom-0 left-0 w-full z-50">
+    © 2025 Bigc
+</footer>
+<script>
+    document.getElementById("menu-btn").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    function setBg() {
+        const body = document.body;
+        if (window.innerWidth < 768) {
+            body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589968812245063/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r1080x1920.png?ex=68652c01&is=6863da81&hm=d8f39c4da7717bd8f7f569160fa51a122fdbcf2a0c1caf33eb51f9ff4dab93fe&')";
+        } else {
+            body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1339098243509911665/1389589607108182036/MCV_SummerDrop_Hero_DotNet_Downloadable_Wallpaper_r800x450.png?ex=68652bab&is=6863da2b&hm=e86edf1e284ccb0dbf176bdeb9d872013506a8b4fb32aec478c47a70ab669187&')";
+        }
+    }
+    setBg();
+    window.addEventListener('resize', setBg);
+</script>
+</body>
+
+</html>
