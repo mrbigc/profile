@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ผลงานแอดออน</title>
+    <title>My addons</title>
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1339098243509911665/1389579427138113647/creator.png?ex=68652230&is=6863d0b0&hm=3880a6cc3b3d909a4871b54bcffb3119620f4b0f2546c93687738a95554dbd6e&">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=VT323&display=swap" rel="stylesheet">
     <style>
@@ -51,6 +52,15 @@
 <section class="py-12 px-6">
     <div class="max-w-2xl mx-auto">
         <h2 class="text-2xl font-bold text-center mb-8 text-gray-900 drop-shadow">แอดออนที่วางขาย</h2>
+        <div class="flex justify-center mb-8">
+            <a href="https://discord.gg/8CE2459wy7" target="_blank" rel="noopener"
+                class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-full shadow transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.317 4.369A19.791 19.791 0 0 0 16.885 3.1a.074.074 0 0 0-.078.037c-.34.607-.719 1.399-.984 2.025a18.524 18.524 0 0 0-5.59 0 12.51 12.51 0 0 0-.997-2.025a.077.077 0 0 0-.078-.037A19.736 19.736 0 0 0 3.677 4.369a.069.069 0 0 0-.032.027C.533 9.09-.32 13.579.099 18.021a.082.082 0 0 0 .031.056c2.104 1.547 4.13 2.488 6.102 3.104a.077.077 0 0 0 .084-.027c.472-.65.893-1.34 1.248-2.063a.076.076 0 0 0-.041-.104c-.662-.25-1.292-.549-1.899-.892a.077.077 0 0 1-.008-.127c.127-.094.254-.192.374-.291a.074.074 0 0 1 .077-.01c3.967 1.813 8.27 1.813 12.193 0a.075.075 0 0 1 .078.009c.12.099.247.197.375.291a.077.077 0 0 1-.006.127 12.298 12.298 0 0 1-1.9.892.076.076 0 0 0-.04.105c.36.722.782 1.412 1.247 2.062a.076.076 0 0 0 .084.028c1.978-.616 4.004-1.557 6.107-3.104a.077.077 0 0 0 .03-.055c.5-5.177-.838-9.637-3.548-13.625a.061.061 0 0 0-.03-.028zM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.175 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.175 1.094 2.157 2.418 0 1.334-.947 2.419-2.157 2.419z"/>
+                </svg>
+                ติดต่อสั่งซื้อ
+            </a>
+        </div></svg>
         <div class="flex flex-col gap-6">
             <a
                 class="ios-blur bg-white/80 p-4 rounded-2xl shadow-lg hover:scale-105 transition flex items-center space-x-4">
@@ -76,9 +86,9 @@
             </a>
         </div>
     </div>
-    <div id="img-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 backdrop-blur-sm">
+    <div id="img-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/40 backdrop-blur-sm">
         <div class="absolute inset-0" onclick="closeModal()"></div>
-        <div class="relative flex flex-col items-center max-w-full max-h-full p-4">
+        <div class="relative flex flex-col items-center w-full h-full p-4">
             <button onclick="closeModal()"
                 class="absolute top-2 right-2 bg-white/80 rounded-full p-2 shadow hover:bg-white transition z-10">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
@@ -87,7 +97,7 @@
                 </svg>
             </button>
             <img id="modal-img" src="" alt="Full Image"
-                class="rounded-lg max-h-[80vh] max-w-[90vw] object-contain shadow-lg">
+                class="rounded-lg w-auto h-auto max-h-full max-w-full object-contain shadow-lg m-auto">
         </div>
     </div>
     <script>
